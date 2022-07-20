@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>step09_form.html</title>
+</head>
+<body>
+    <h1>폼(from) 요소 작성하기</h1>
+    <!--
+        label 의 for 속성의 값과
+        input 의 id 속성의 값과 동일하게 작성이 되어야 된다.
+        name 속성의 값은 서버에서 필요한 값이다.
+        for을 쓸 때는 박스로 포커스가 이동되어야 할 때 사용한다. id값이 필수
+    -->
+    <form action="login.jsp">
+        <label for="email">이메일</label>
+        <!--
+            lable for(서버에 필요한 값)은 이메일과 패스워드 구분해줌
+            id 는 lable for name과 같게 작성(일치)
+        -->
+        <input type="text" id="email" name="email">
+        <label for="pwd">비밀번호</label>
+        <input type="password" id="pwd" name="pwd">
+        <!-- 제출 버튼은 반드시 form 요소 안에 위치해야 한다.-->
+        <button type="submit">로그인</button>
+    </form>
+</body>
+</html>
